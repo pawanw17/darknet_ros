@@ -291,3 +291,10 @@ if (cmake_clang_tools_FOUND)
     CF_WERROR
   )
 endif (cmake_clang_tools_FOUND)
+
+add_executable(fibonacci_client src/fibonacci_client.cpp)
+
+target_link_libraries( 
+  fibonacci_client
+  ${catkin_LIBRARIES}
+)
